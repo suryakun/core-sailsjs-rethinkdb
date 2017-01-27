@@ -25,14 +25,19 @@ module.exports = {
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
 
-  // port: 80,
+  port: 8000,
+
+  grunt: {
+    _hookTimeout: 200000
+  },
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
    ***************************************************************************/
 
-  // log: {
-  //   level: "silent"
-  // }
+  log: {
+    level: "silent"
+  },
 
+  baseUri: 'http://site.com',  
 };

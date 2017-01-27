@@ -17,6 +17,7 @@
 	    schema: {
 	        id: type.string(),
 	        name: type.string().required(),
+	        username: type.string().required(),
 	        password: type.string(),
 	        roles: [type.string()],
 	        email: type.string().validator(validator.isEmail),
